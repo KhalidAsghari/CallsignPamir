@@ -1,0 +1,11 @@
+#install.packages("sf")
+#install.packages("tmap")
+#installed.packages("tmaptools")
+library(sf)
+library(tmap)
+library(tmaptools)
+library(tidyverse)
+library(leaflet)
+
+myshape <- st_read("District.shp")
+str(myshape)
